@@ -4,6 +4,20 @@ Um clássico jogo da memória "Simon Says" implementado para o
 microcontrolador Raspberry Pi Pico, utilizando matriz de LEDs, display
 OLED, joystick, botões e efeitos sonoros.
 
+## Leitura rápida
+
+Jogo acadêmico em **MicroPython** para RP2040. Integra uma máquina de estados
+do jogo, entradas físicas, matriz RGB, display e efeitos sonoros.
+
+| O que revisar | Arquivo |
+|---|---|
+| Lógica do jogo e entradas/saídas | [main.py](main.py) |
+| Drivers incluídos | [lib/ssd1306.py](lib/ssd1306.py) e [lib/neopixel.py](lib/neopixel.py) |
+| Arquitetura do hardware | [img/system_architecture.png](img/system_architecture.png) |
+
+A execução requer uma placa compatível com MicroPython e os periféricos
+descritos abaixo. Não é um programa para execução direta no Python do computador.
+
 ## 🎮 Descrição do Jogo
 
 Simon Says é um jogo de memória no qual os jogadores devem repetir uma
@@ -118,8 +132,8 @@ Todos os componentes de hardware utilizados são on-board:
 1.  **Clonar o repositório**:
 
      ``` bash
-     git clone <repository-url>
-     cd P1
+     git clone https://github.com/enggusttavomn/simon-says-embarcado-rp2040.git
+     cd simon-says-embarcado-rp2040
      ```
 
 2.  **Abrir o Projeto**:
